@@ -1,0 +1,60 @@
+{
+  "name": "Santan Sharma",
+  "role": "Senior Software Engineer",
+  "tagline": "Designing scalable systems and crafting clean, user-focused web experiences",
+  "location": "Pune, India",
+  "profileImage": "assets/images/profile.png",
+
+  "shortBio": "I'm a Senior Software Engineer with 6+ years of experience building enterprise-grade applications, AI-driven platforms, and scalable cloud solutions. I specialize in architecting resilient systems using C#, .NET, Angular, and Azure.\n\nI focus heavily on clean code, performance optimization, and building solutions that actually solve problems—not just ship features. Whether it's modernizing large-scale ETL pipelines, developing reusable UI libraries, or designing distributed cloud services, I aim to deliver high-impact, maintainable software that lasts.",
+
+  "skills": {
+    "languages": [
+      "C#",
+      "TypeScript",
+      "JavaScript",
+      "Python",
+      "SQL"
+    ],
+    "frameworks": [
+      ".NET Core",
+      "ASP.NET Core",
+      "Angular",
+      "Telerik UI",
+      "Entity Framework",
+      "Node.js",
+      "Express"
+    ],
+    "databases": [
+      "Azure Databricks",
+      "PostgreSQL",
+      "MySQL",
+      "SQL Server"
+    ],
+    "tools": [
+      "Azure (App Services, Functions)",
+      "Azure DevOps",
+      "Git",
+      "CI/CD",
+      "Docker",
+      "Postman",
+      "Visual Studio",
+      "VS Code",
+      "JIRA"
+    ],
+    "other": [
+      "AI & NLP",
+      "Web APIs",
+      "Microservices",
+      "Data Structures & Algorithms",
+      "RESTful Design",
+      "Agile Development"
+    ]
+  },
+
+  "socials": {
+    "github": "https://github.com/santansharma",
+    "linkedin": "https://www.linkedin.com/in/santan47/",
+    "twitter": "https://x.com/santan_sh",
+    "portfolioDomain": "sanrachna.space"
+  }
+}

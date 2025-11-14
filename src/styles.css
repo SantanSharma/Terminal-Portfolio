@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-terminal-bg text-gray-100 font-mono;
+  }
+}
+
+@layer components {
+  .terminal-window {
+    @apply relative bg-terminal-dark rounded-lg overflow-hidden;
+  }
+  
+  .terminal-header {
+    @apply flex items-center gap-2 px-4 py-3 bg-gray-800 border-b border-gray-700;
+  }
+  
+  .terminal-dot {
+    @apply w-3 h-3 rounded-full;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}

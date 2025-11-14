@@ -1,0 +1,95 @@
+<div class="min-h-screen pt-24 pb-20 px-4">
+  <div class="container mx-auto max-w-4xl">
+    <!-- Header -->
+    <div class="mb-12">
+      <div class="flex items-center space-x-2 text-terminal-green mb-4">
+        <span class="text-2xl">&gt;</span>
+        <h1 class="text-3xl md:text-4xl font-bold text-white">
+          ~/blog
+        </h1>
+      </div>
+      <p class="text-gray-400 ml-8">Thoughts on development, architecture, and technology</p>
+    </div>
+
+    <!-- Blog List -->
+    <div class="space-y-6">
+      <article 
+        *ngFor="let blog of blogs()"
+        class="terminal-window group hover:scale-[1.02] transition-transform duration-300"
+      >
+        <div class="terminal-header">
+          <div class="terminal-dot bg-red-500"></div>
+          <div class="terminal-dot bg-yellow-500"></div>
+          <div class="terminal-dot bg-green-500"></div>
+          <span class="ml-4 text-sm text-gray-400">{{ blog.id }}.md</span>
+        </div>
+
+        <div class="p-6">
+          <!-- Date -->
+          <time class="text-sm text-gray-500 mb-2 block">
+            {{ formatDate(blog.date) }}
+          </time>
+
+          <!-- Title -->
+          <h2 class="text-2xl font-bold text-white group-hover:text-terminal-purple transition-colors mb-3">
+            <a [routerLink]="['/blog', blog.id]">
+              {{ blog.title }}
+            </a>
+          </h2>
+
+          <!-- Summary -->
+          <p class="text-gray-400 mb-4">
+            {{ blog.summary }}
+          </p>
+
+          <!-- Tags -->
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span 
+              *ngFor="let tag of blog.tags"
+              class="px-2 py-1 bg-gray-800 border border-gray-700 rounded text-xs text-terminal-purple"
+            >
+              #{{ tag }}
+            </span>
+          </div>
+
+          <!-- Read More -->
+          <a 
+            [routerLink]="['/blog', blog.id]"
+            class="inline-flex items-center space-x-2 text-terminal-green hover:text-terminal-purple transition-colors"
+          >
+            <span>&gt;</span>
+            <span>Read article</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- No blogs message -->
+      <div *ngIf="blogs().length === 0" class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-dot bg-red-500"></div>
+          <div class="terminal-dot bg-yellow-500"></div>
+          <div class="terminal-dot bg-green-500"></div>
+        </div>
+        <div class="p-6 text-center text-gray-400">
+          <p>No blog posts yet. Check back soon!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to Home -->
+    <div class="mt-12">
+      <a 
+        routerLink="/"
+        class="inline-flex items-center space-x-2 text-gray-400 hover:text-terminal-purple transition-colors"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+        <span>Back to home</span>
+      </a>
+    </div>
+  </div>
+</div>

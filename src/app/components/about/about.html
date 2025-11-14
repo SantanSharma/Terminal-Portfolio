@@ -1,0 +1,67 @@
+<section id="about" class="min-h-screen py-20 px-4 bg-terminal-dark/50">
+  <div class="container mx-auto max-w-6xl">
+    <!-- Section Header -->
+    <div class="mb-12">
+      <div class="flex items-center space-x-2 text-terminal-green mb-4">
+        <span class="text-2xl">&gt;</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-white">
+          ~/about
+        </h2>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- Bio Section -->
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-dot bg-red-500"></div>
+          <div class="terminal-dot bg-yellow-500"></div>
+          <div class="terminal-dot bg-green-500"></div>
+          <span class="ml-4 text-sm text-gray-400">~/about/bio</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center space-x-2 text-terminal-green mb-4">
+            <span>&gt;</span>
+            <span class="text-terminal-purple">cat bio.txt</span>
+          </div>
+          <div *ngIf="profile()" class="text-gray-300 space-y-4 ml-4 leading-relaxed">
+            <p *ngFor="let paragraph of profile()!.shortBio.split('\n')">
+              {{ paragraph }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Section -->
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-dot bg-red-500"></div>
+          <div class="terminal-dot bg-yellow-500"></div>
+          <div class="terminal-dot bg-green-500"></div>
+          <span class="ml-4 text-sm text-gray-400">~/about/skills</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center space-x-2 text-terminal-green mb-4">
+            <span>&gt;</span>
+            <span class="text-terminal-purple">ls skills/</span>
+          </div>
+          <div class="space-y-6 ml-4">
+            <div *ngFor="let category of getSkillCategories()">
+              <h3 class="text-white font-semibold mb-3">
+                {{ category.name }}/
+              </h3>
+              <div class="flex flex-wrap gap-2">
+                <span 
+                  *ngFor="let skill of category.items"
+                  class="px-3 py-1 bg-gray-800 border border-gray-700 rounded text-sm text-gray-300 hover:border-terminal-purple hover:text-terminal-purple transition-colors"
+                >
+                  {{ skill }}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

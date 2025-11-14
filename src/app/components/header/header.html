@@ -1,0 +1,81 @@
+<header class="fixed top-0 left-0 right-0 z-50 bg-terminal-dark/95 backdrop-blur-sm border-b border-gray-800">
+  <nav class="container mx-auto px-4 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <a routerLink="/" class="text-xl font-bold text-terminal-purple hover:text-terminal-green transition-colors">
+        <span class="text-terminal-green">&gt;_</span> portfolio
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center space-x-8">
+        <button (click)="scrollToSection('home')" class="text-gray-300 hover:text-terminal-purple transition-colors">
+          ~/home
+        </button>
+        <button (click)="scrollToSection('projects')" class="text-gray-300 hover:text-terminal-purple transition-colors">
+          ~/projects
+        </button>
+        <button (click)="scrollToSection('about')" class="text-gray-300 hover:text-terminal-purple transition-colors">
+          ~/about
+        </button>
+        <button (click)="scrollToSection('contact')" class="text-gray-300 hover:text-terminal-purple transition-colors">
+          ~/contact
+        </button>
+        <a routerLink="/blog" class="text-gray-300 hover:text-terminal-purple transition-colors">
+          ~/blog
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button 
+        (click)="toggleMobileMenu()"
+        class="md:hidden text-gray-300 hover:text-terminal-purple transition-colors"
+        [attr.aria-label]="mobileMenuOpen() ? 'Close menu' : 'Open menu'"
+      >
+        <svg *ngIf="!mobileMenuOpen()" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg *ngIf="mobileMenuOpen()" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div 
+      *ngIf="mobileMenuOpen()"
+      class="md:hidden mt-4 py-4 space-y-4 border-t border-gray-800 animate-fade-in"
+    >
+      <button 
+        (click)="scrollToSection('home')"
+        class="block w-full text-left text-gray-300 hover:text-terminal-purple transition-colors py-2"
+      >
+        ~/home
+      </button>
+      <button 
+        (click)="scrollToSection('projects')"
+        class="block w-full text-left text-gray-300 hover:text-terminal-purple transition-colors py-2"
+      >
+        ~/projects
+      </button>
+      <button 
+        (click)="scrollToSection('about')"
+        class="block w-full text-left text-gray-300 hover:text-terminal-purple transition-colors py-2"
+      >
+        ~/about
+      </button>
+      <button 
+        (click)="scrollToSection('contact')"
+        class="block w-full text-left text-gray-300 hover:text-terminal-purple transition-colors py-2"
+      >
+        ~/contact
+      </button>
+      <a 
+        routerLink="/blog"
+        (click)="closeMobileMenu()"
+        class="block w-full text-left text-gray-300 hover:text-terminal-purple transition-colors py-2"
+      >
+        ~/blog
+      </a>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,87 @@
+::ng-deep .blog-content {
+  color: #d1d5db;
+  line-height: 1.8;
+}
+
+::ng-deep .blog-content h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+::ng-deep .blog-content h2 {
+  color: #a78bfa;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+::ng-deep .blog-content h3 {
+  color: #c4b5fd;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+::ng-deep .blog-content p {
+  margin-bottom: 1rem;
+}
+
+::ng-deep .blog-content ul,
+::ng-deep .blog-content ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+::ng-deep .blog-content li {
+  margin-bottom: 0.5rem;
+}
+
+::ng-deep .blog-content code {
+  background-color: #1f2937;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+  color: #4ade80;
+}
+
+::ng-deep .blog-content pre {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+::ng-deep .blog-content pre code {
+  background-color: transparent;
+  padding: 0;
+  color: #d1d5db;
+}
+
+::ng-deep .blog-content a {
+  color: #a78bfa;
+  text-decoration: underline;
+}
+
+::ng-deep .blog-content a:hover {
+  color: #4ade80;
+}
+
+::ng-deep .blog-content blockquote {
+  border-left: 4px solid #a78bfa;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+::ng-deep .blog-content strong {
+  color: #fff;
+  font-weight: 600;
+}

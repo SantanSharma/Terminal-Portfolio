@@ -1,0 +1,42 @@
+[
+  {
+    "id": "project-1",
+    "title": "Expense Tracker",
+    "shortDescription": "The goal of this project is to develop a lightweight, fully client-side Expense Tracker application using Angular that enables users to efficiently record, manage, and visualize personal expenses.",
+    "techStack": ["Angular", "Node.js", "MySql", "Supabase", "Azure"],
+    "image": "",
+    "liveUrl": "https://sanrachna.space",
+    "repoUrl": "https://github.com/SantanSharma/expense-tracker",
+    "status": "Live"
+  },
+  {
+    "id": "project-2",
+    "title": "Angular Codebase Analyzer",
+    "shortDescription": "The Angular Codebase Analyzer is a developer-focused tool designed to automatically scan, parse, and evaluate Angular project structures. It identifies architectural inconsistencies, unused modules, poor folder organization, and violations of best practices—all without requiring any manual inspection.",
+    "techStack": ["Angular", "TypeScript", "C#", "Tailwind CSS", "Chart.js"],
+    "image": "",
+    "liveUrl": "https://sanrachna.space",
+    "repoUrl": "https://github.com/SantanSharma/angular-codebase-analyzer",
+    "status": "Live"
+  },
+  {
+    "id": "project-3",
+    "title": "AppFlow Explorer",
+    "shortDescription": "AppFlow Explorer is a frontend-only web application designed to map and visualize an entire software platform’s functional and technical flow — from user interactions (UI) all the way to database procedures (DB). It serves as a living blueprint of the system for both non-technical users (to understand modules, features, and concepts) an",
+    "techStack": ["Angular", "D3.js", "OpenAI API", "Chart.js", "Mermaid Diagrams", "C#"],
+    "image": "",
+    "liveUrl": "https://appflowexplorer.netlify.app/",
+    "repoUrl": "https://github.com/SantanSharma/AppFlow-Explorer",
+    "status": "In progress"
+  },
+  {
+    "id": "project-4",
+    "title": "Developer Portfolio",
+    "shortDescription": "Modern, responsive portfolio website with blog functionality and dynamic content management.",
+    "techStack": ["Angular", "Tailwind CSS", "Markdown"],
+    "image": "",
+    "liveUrl": "https://sanrachna.space",
+    "repoUrl": "https://github.com/SantanSharma/portfolio",
+    "status": "Live"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "clean-angular-architecture",
+    "title": "Clean Architecture in Angular",
+    "summary": "How to structure large Angular apps for maintainability.",
+    "date": "2025-11-10",
+    "tags": ["Angular", "Architecture"],
+    "file": "assets/blogs/clean-angular-architecture.md"
+  },
+  {
+    "id": "tailwind-best-practices",
+    "title": "Tailwind CSS Best Practices",
+    "summary": "Tips and tricks for writing maintainable Tailwind CSS in production applications.",
+    "date": "2025-10-25",
+    "tags": ["CSS", "Tailwind", "Best Practices"],
+    "file": "assets/blogs/tailwind-best-practices.md"
+  },
+  {
+    "id": "typescript-advanced-types",
+    "title": "Advanced TypeScript Types You Should Know",
+    "summary": "Exploring utility types, conditional types, and advanced type patterns in TypeScript.",
+    "date": "2025-09-15",
+    "tags": ["TypeScript", "Programming"],
+    "file": "assets/blogs/typescript-advanced-types.md"
+  }
+]
