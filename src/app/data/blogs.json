@@ -1,5 +1,13 @@
 [
   {
+    "id": "why-developers-get-bad-ai-output",
+    "title": "Why Most Developers Get Bad AI Output (And How I Fixed It in VS Code)",
+    "summary": "AI tools are powerful, but bad prompts lead to bad output. Learn how PromptLint transforms rough prompts into structured, professional instructions.",
+    "date": "2026-01-18",
+    "tags": ["ChatGPT", "VS Code", "AI", "Productivity"],
+    "file": "assets/blogs/why-developers-get-bad-ai-output.md"
+  },
+  {
     "id": "clean-angular-architecture",
     "title": "Clean Architecture in Angular",
     "summary": "How to structure large Angular apps for maintainability.",
